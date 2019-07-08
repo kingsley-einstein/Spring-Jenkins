@@ -20,26 +20,26 @@ public class User implements java.io.Serializable {
     @NotEmpty(message = "First name cannot be empty")
     @NotNull(message = "First name cannot be null")
     @Column(name = "first_name")
-    private String first_name;
+    private String firstName;
 
     @NotEmpty(message = "Last name cannot be empty")
     @NotNull(message = "Last name cannot be null")
     @Column(name = "last_name")
-    private String last_name;
+    private String lastName;
 
     public User() {}
 
-    public User(String first_name, String last_name) {
-        this.first_name = first_name;
-        this.last_name = last_name;
+    public User(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
     public String getFirstName() {
-        return first_name;
+        return firstName;
     }
 
     public String getLastName() {
-        return last_name;
+        return lastName;
     }
 
     public Long getId() {
